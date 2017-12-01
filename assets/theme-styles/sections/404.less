@@ -1,0 +1,35 @@
+//---- Error 404 ----//
+
+body.error404 {
+  #primary {
+    float: none;
+    section.error-404 {
+      text-align: center;
+      .page-header {
+        border-bottom: solid 3px @accent;
+        h1.page-title {
+          color: @content;
+        }
+      }
+      .page-content {
+        font-family: "Maven Pro", sans-serif;
+        margin-bottom: 40px;
+        form#searchform {
+          input[type="text"] {
+            outline: none;
+            border-radius: 0px;
+          }
+          button[type="submit"] {
+            box-shadow: none;
+            background: none;
+            border: none;
+            padding: 0px;
+            font-size: 18px;
+            color: @accent;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}

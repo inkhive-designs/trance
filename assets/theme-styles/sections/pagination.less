@@ -1,0 +1,93 @@
+/*----Pagination----*/
+.pagination {
+  width: 100%;
+}
+.pagination li {
+  list-style: none;
+  float: left;
+  color: black;
+  margin: 0px 7px;
+  span {
+    background: none;
+    padding: 10px;
+    margin-right: 1px;
+ }
+  .page_count:after {
+    color: #b93d3d;
+ }
+  .page_count:before {
+    color: #b93d3d;
+  }
+}
+.pagination ul {
+  float: none;
+  display: inline-block;
+}
+.pagination a {
+  color: darken(@background, 30%);
+  background: none;
+  position: relative;
+  font-weight: 700;
+  padding: 10px 16px;
+  margin-left: 1px;
+  text-decoration: none;
+  transition: background ease-in-out .2s, color ease-in .2s;
+  &:after {
+    content: "";
+    position: absolute;
+    background: @accent;
+    height: 3px;
+    width: 100%;
+    bottom: 0;
+    left: 0px;
+    transition: bottom .2s ease-out ;
+  }
+  &:hover {
+    &:after {
+      bottom: 100%;
+    }
+  }
+}
+
+.pagination .next, .pagination .prev {
+  background: none;
+  color: darken(@background, 30%);
+  font-weight: 700;
+  padding: 0px;
+  border: 0px;
+  &:after {
+    content: none;
+  }
+}
+
+.pagination .prev:before {
+  content: '\f104';
+  font-family: FontAwesome;
+  padding-right: 4px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.pagination .next:after {
+  content: '\f105';
+  background: none;
+  font-size: 20px;
+  font-family: FontAwesome;
+  padding-left: 4px;
+  font-weight: 700;
+  bottom: 100%;
+}
+
+.pagination .dots {
+  background: none;
+  border: none;
+}
+.pagination .current {
+  background: none;
+  color: darken(@background, 30%);
+  font-weight: 700;
+  border-right: none;
+  padding: 10px 16px;
+  margin: 0;
+  margin-left: 1px;
+}

@@ -53,3 +53,13 @@
 				});
 			});
 		}
+
+		jQuery(document).ready(function() {
+			jQuery('.radial').prepend('<div class="bar"></div>');
+			jQuery('.bar').css('width', js_param.bar2 + '%');
+		});
+
+		jQuery(document).ready(function() {
+            // jQuery('#backdrop').after("<circle class='progress' r='90' cy='120' cx='120' stroke-width='4' stroke='red'  fill='none'></circle>");
+            jQuery('.progress').css('stroke-dasharray',js_param.progress1 + 'px');
+		});

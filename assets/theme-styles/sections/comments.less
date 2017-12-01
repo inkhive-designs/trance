@@ -1,0 +1,63 @@
+/*----Comments----*/
+
+#comments {
+  h2.comments-title {
+    color: @accent;
+    font-family: "Maven Pro";
+  }
+  ul.comment-list {
+    list-style: none;
+    font-family: "Maven Pro";
+    li {
+      margin: 20px 0;
+      .vcard {
+        a {
+          color: @accent;
+          font-family: "Play";
+        }
+      }
+      .comment-meta {
+        font-family: "Play";
+        font-size: 12px;
+        padding: 10px;
+        margin: 10px 0;
+        border-top: solid 1px @accent;
+        background: url(../../images/pattern-2.png) repeat-x 0% 0%;
+        a {
+          font-family: "Play";
+        }
+      }
+      ul.children {
+        list-style: none;
+      }
+      .reply a {
+        font-family: "Play";
+        color: @accent;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+#respond {
+  text-align: center;
+  h3#reply-title {
+    color: @accent;
+  }
+  #form-allowed-tags {
+    display: none;
+  }
+  .comment-form-comment {
+    textarea {
+      outline: none;
+    }
+  }
+  input[type="submit"] {
+    border: solid 1px @content;
+    padding: 10px 12px;
+    border-radius: 0px;
+    font-size: 14px;
+    box-shadow: none;
+    text-shadow: none;
+  }
+}

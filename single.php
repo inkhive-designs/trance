@@ -14,7 +14,7 @@ get_header(); ?>
 		
 		<?php trance_set_post_views(get_the_ID()); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+			<?php get_template_part( 'modules/content/content', 'single' ); ?>
 
 			<?php the_post_navigation(); ?>
 

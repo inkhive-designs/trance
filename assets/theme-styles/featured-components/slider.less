@@ -1,0 +1,38 @@
+#slider-wrapper {
+  margin: 60px 0;
+  .bx-wrapper {
+    padding-top: 5px;
+    border-top: solid 4px @accent;
+    ul.bxslider {
+      li {
+        img {
+          width: 100%;
+        }
+        .slide_caption {
+          text-align: center;
+          font-size: 25px;
+          padding: 30px 15%;
+          margin-top: 5px;
+          border-top: solid 4px @accent;
+          background: url(../../images/pattern.jpg) repeat;
+          p {
+            color: darken(@background,7%);;
+          }
+        }
+      }
+    }
+    .bx-default-pager a {
+      border-radius: 0px;
+      height: 4px;
+      width: 20px;
+      background: @accent;
+      &:hover {
+        transform: scale(1.1,1.1);
+      }
+      &.active {
+        transform-origin: 50% 100%;
+        transform: scale(1.2,1.5);
+      }
+    }
+  }
+}
