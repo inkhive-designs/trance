@@ -25,7 +25,7 @@ get_header(); ?>
 				 * If you want to overload this in a child theme then include a file
 				 * called content-search.php and that will be used instead.
 				 */
-				get_template_part( 'modules/content/content', get_post_format() );
+				get_template_part( 'template-parts/content', get_post_format() );
 				?>
 
 			<?php endwhile; ?>
@@ -34,7 +34,7 @@ get_header(); ?>
 
 		<?php else : ?>
 
-			<?php get_template_part( 'modules/content/content', 'none' ); ?>
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
 
