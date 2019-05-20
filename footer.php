@@ -45,6 +45,9 @@
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'trance' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'trance' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
 			<?php printf( esc_html__( '%1$s WordPress Theme by %2$s.', 'trance' ), 'Trance', '<a href="https://www.inkhive.com/" rel="designer">InkHive</a>' ); ?>
+			<nav id="footer-navigation">
+				<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'footer-menu', 'depth'	=> 1 ) ); ?>
+			</nav>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

@@ -698,13 +698,37 @@ h1.home-title {
 .site-info {
 	background: #ddd;
 	border-top: solid 3px @site-color;
-	padding: 30px 20px;
+	padding: 30px 20px 10px 20px;
 	text-align: center;
 	font-family: "Maven Pro", sans-serif;
 	a {
 		color: @site-color !important;
 	}
+	#footer-navigation {
+		#footer-menu {
+			ul {
+				list-style: none;
+				margin: 0;
+				li {
+					display: inline-block;
+					padding: 10px 20px;
+					position: relative;
+					&:after {
+						content: "|";
+						position: absolute;
+						right: 0;
+					}
+					&:last-child {
+						&:after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
 }
+
 
 /*----Comments----*/
 
